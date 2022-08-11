@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { TouchableOpacity } from 'react-native-web';
+import { StyleSheet, Text, View,TouchableOpacity,TextInput } from 'react-native';
+import Tempo from './componentes/Tempo';
 
 export default function App() {
   return (
@@ -10,7 +9,7 @@ export default function App() {
       </View>
       <View style={styles.blocoGeral}>
         <Text style={styles.label}>digite sua cidade: </Text>
-        <textImput
+        <TextInput
           placeholder='sua cidade...'
           style={styles.input}
         />
@@ -20,6 +19,7 @@ export default function App() {
           <Text style={styles.textBotao}>buscar</Text>
         </TouchableOpacity>
       </View>
+    <Tempo/>
     </View>
   );
 }
