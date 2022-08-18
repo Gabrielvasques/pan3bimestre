@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text, StyleSheet} from 'react-native';
 
-export default function Tempo(){
+export default function Tempo(props){
     return (
         <>
-            <Text style={styles.texto}>min: </Text>
+            <Text style={styles.texto}>min:{props.dados.temp} </Text>
             <Text style={styles.texto}>max: </Text>
             <Text style={styles.texto}>descrição: </Text>
         </>
